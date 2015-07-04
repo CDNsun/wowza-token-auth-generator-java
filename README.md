@@ -1,6 +1,4 @@
-# wowza-token-auth-generator-java
-
-A token generator for Wowza Token Authentication
+#Token generator for Wowza Token Authentication
 
 
 REQUIRE
