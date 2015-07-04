@@ -13,7 +13,7 @@ BUILD
 ```  
 mvn clean install
 ```  
-  Upon success of the build, you will find the jar file (**token-auth-generator-1.2.jar**) in the folder named 'target'
+  Upon success of the build, you will find the jar file (**token-auth-generator-1.2.jar**) in the folder named ***target***
 
 
 USAGE
