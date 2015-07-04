@@ -3,7 +3,8 @@
 
 REQUIRE
 
-  Java 6 or 7, Maven 2 or 3
+ * Java 6 or 7
+ * Maven 2 or 3
 
 
 BUILD
