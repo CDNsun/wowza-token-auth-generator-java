@@ -1,7 +1,7 @@
 #Token generator for Wowza Token Authentication
 
 
-REQUIRE
+REQUIRES
 
  * Java 6 or 7
  * Maven 2 or 3
