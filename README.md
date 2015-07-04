@@ -9,7 +9,7 @@ REQUIRE
 
 BUILD
 
-  To build the generator go to /wowza-token-auth-generator-java/ and run the following. 
+  To build the generator go to /wowza-token-auth-generator-java/ and run the following command:
 ```  
 mvn clean install
 ```  
@@ -18,7 +18,7 @@ mvn clean install
 
 USAGE
 ```
-java -jar token-auth-generator-1.2.jar (encrypt | decrypt) (\<primary_key\> | \<backup_key\>) "\<security_parameters\>"
+java -jar token-auth-generator-1.2.jar (encrypt | decrypt) (<primary_key> | <backup_key>) "<security_parameters>"
 ```
 
 SECURITY PARAMETERS
@@ -72,10 +72,9 @@ java -jar token-auth-generator-1.2.jar encrypt samplekey "expire=1598832000&ref_
 token=110ea31ac69c09a2db0bdd74238843631cdab498ff7e6e75cbd99cc4d05426ab679a57015d4e48438c97b921652daec62de3829f8ff437e27449cfdfc2f1e5d9fc47f14e91a51ea7
 ```
 
-  Note: 
-    Then append the result at the end of the streaming CDN URL. Example: 
+  Then append the result at the end of the streaming CDN URL as in the following example:
 ```    
-rtmp://12345.r.cdnsun.net/_definst_/live?token=110e..
+rtmp://12345.r.cdnsun.net/_definst_/live?token=110ea31ac69c09a2db0bdd74238843631cdab498ff7e6e75cbd99cc4d05426ab679a57015d4e48438c97b921652daec62de3829f8ff437e27449cfdfc2f1e5d9fc47f14e91a51ea7
 ```
 
 TO DECRYPT TOKEN (for debugging purposes)
