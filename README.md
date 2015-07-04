@@ -4,42 +4,42 @@ A generator of tokens for Wowza Token Authentication
 
 REQUIRE
 
-  Java 6 or 7
-  Maven 2 or 3
+  Java 6 or 7, Maven 2 or 3
 
 
 BUILD
 
-  To build, go to /wowza-token-auth-generator-java/ and run: mvn clean install
+  To build, go to /wowza-token-auth-generator-java/ and run: **mvn clean install**
   
-  Upon success of the build, you will find the jar file (token-auth-generator.jar) at the folder named 'target'
+  Upon success of the build, you will find the jar file (**token-auth-generator-1.2.jar**) at the folder named 'target'
 
 
 USAGE
 
-  java -jar token-auth-generator-1.2.jar (encrypt | decrypt) (<primary_key> | <backup_key>) "<security_parameters>"
+  java -jar token-auth-generator-1.2.jar (encrypt | decrypt) (\<primary_key\> | \<backup_key\>) "\<security_parameters\>"
 
 
 SECURITY PARAMETERS
 
-  expire
-    Number of seconds since Unix time (Epoch time)
-    UTC based
-    Must not be earlier than current time
+ * expire
+   * Number of seconds since Unix time (Epoch time) 
+   * UTC based 
+   * Must not be earlier than current time
 
-  ref_allow
-    Referrer domain (e.g. domain.com) or path (e.g. domain.com/video/)
-    Allow multiple referrers separated by comma (,) without space(s)
-    Wildcard (*) allowed only at the beginning of a referrer, e.g. *.domain.com
-    Do not append space at the start & end of a referrer
-    Domain must fullfill RFC 3490
-    Path must fullfill RFC 2396
-    Should not include port (e.g. domain.com:3000/video)
-    Should not include protocol portion  (e.g. http://domain.com)
 
-  ref_deny
-    Same rules as in ref_allow
-    Normally ref_allow  & ref_deny are not to be used together, but if this happened ref_allow will take precedence over ref_deny.
+ * ref_allow
+  *  Referrer domain (e.g. domain.com) or path (e.g. domain.com/video/)
+  *  Allow multiple referrers separated by comma (,) without space(s)
+  *  Wildcard (*) allowed only at the beginning of a referrer, e.g. *.domain.com
+  *  Do not append space at the start & end of a referrer
+  *  Domain must fullfill RFC 3490
+  *  Path must fullfill RFC 2396
+  *  Should not include port (e.g. domain.com:3000/video)
+  *  Should not include protocol portion  (e.g. http://domain.com)
+
+ * ref_deny
+   * Same rules as in ref_allow
+   * Normally ref_allow  & ref_deny are not to be used together, but if this happened ref_allow will take precedence over ref_deny.
 
 
 ALLOW BLANK / MISSING REFERRER
