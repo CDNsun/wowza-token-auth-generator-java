@@ -26,7 +26,7 @@ import org.apache.shiro.crypto.OperationMode;
 import org.apache.shiro.crypto.PaddingScheme;
 
 /**
- * Tool to generate / decrypt token.
+ * Tool to generate / decrypt token..
  * 
  * @author kwshoo
  * @version 20140723
