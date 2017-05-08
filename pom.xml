@@ -3,10 +3,10 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.cdnsun</groupId>
-    <artifactId>auth-token-generator</artifactId>
+    <artifactId>wowza-token-auth-generator-java</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
-    <name>auth-token-generator</name>
+    <name>wowza-token-auth-generator-java</name>
     <url>http://maven.apache.org</url>
 
     <properties>
