@@ -11,7 +11,7 @@ BUILD
 
   To build the generator go to /wowza-token-auth-generator-java/ and run the following command:
 ```  
-mvn clean install
+mvn clean package
 ```  
   Upon success of the build, you will find the jar file (**token-auth-generator-1.2.jar**) in the folder named ***target***
 
