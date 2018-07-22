@@ -87,6 +87,7 @@ Refs Allowed: *.trusted.com
 Refs Denied: denied.com
 ```
 
-CDNSUN WEBSITE
+CONTACT
 
-https://cdnsun.com
+W: https://cdnsun.com
+E: info@cdnsun.com
